@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Appium</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">129,011</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Appium &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.testDefinition.TestUsercreation</td><td><a href="#m0">TestCase_two_viewUserProfileAndVerifyDetails</a></td><td rowspan="1">1594182097746</td><td rowspan="1">54641</td></tr><tr><th colspan="4">Appium &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qa.test.API.GetUser</td><td><a href="#m1">getUser</a></td><td rowspan="1">1594182035843</td><td rowspan="1">874</td></tr><tr class="passedodd"><td rowspan="1">com.qa.test.API.GetUsers</td><td><a href="#m2">getAllUsers</a></td><td rowspan="1">1594182030875</td><td rowspan="1">3821</td></tr><tr class="passedeven"><td rowspan="1">com.qa.test.API.createUsers</td><td><a href="#m3">postUser</a></td><td rowspan="1">1594182034723</td><td rowspan="1">1116</td></tr><tr class="passedodd"><td rowspan="1">com.qa.testDefinition.TestUsercreation</td><td><a href="#m4">TestCase_one_verifyUserIsAbleTocreateUserProfile</a></td><td rowspan="1">1594182036721</td><td rowspan="1">57242</td></tr></tbody>
+</table>
+<h2>Appium</h2><h3 id="m0">com.qa.testDefinition.TestUsercreation#TestCase_two_viewUserProfileAndVerifyDetails</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;HIGURL71125&apos;, ip: &apos;10.45.64.17&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\tkhan\Desktop\Appi..., appPackage: com.example.roche, databaseEnabled: false, desired: {app: C:\Users\tkhan\Desktop\Appi..., deviceName: SM-A505F, newCommandTimeout: 60, platformName: android, platformVersion: 10, udid: RZ8M41YBJWA}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-A505F, deviceName: RZ8M41YBJWA, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: RZ8M41YBJWA, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 2.625, platform: LINUX, platformName: ANDROID, platformVersion: 10, statBarHeight: 83, takesScreenshot: true, udid: RZ8M41YBJWA, viewportRect: {height: 2048, left: 0, top: 83, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 4741b7ee-f018-4719-b5af-efc5ff357c4c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(&lt;generated&gt;)
+	at com.qa.test.Appium.DOSViewUser.SearchForUser(DOSViewUser.java:40)
+	at com.qa.testDefinition.TestUsercreation.TestCase_two_viewUserProfileAndVerifyDetails(TestUsercreation.java:26)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.test.API.GetUser#getUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.qa.test.API.GetUsers#getAllUsers</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.qa.test.API.createUsers#postUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.qa.testDefinition.TestUsercreation#TestCase_one_verifyUserIsAbleTocreateUserProfile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

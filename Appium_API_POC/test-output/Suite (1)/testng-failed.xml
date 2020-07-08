@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite (1)]">
+	<listeners>
+		<listener class-name="com.qa.custom_listener.TestExecution" />
+	</listeners>
+	<test thread-count="5" name="Appium(failed)">
+		<parameter name="deviceId" value="3300cee46df5b40b" />
+		<parameter name="deviceName" value="SM-G610F" />
+		<parameter name="portNumber" value="4723" />
+		<classes>
+			<class name="com.qa.testDefinition.TestUsercreation">
+				<methods>
+					<include
+						name="TestCase_one_verifyUserIsAbleTocreateUserProfile" />
+					<include
+						name="TestCase_two_viewUserProfileAndVerifyDetails" />
+				</methods>
+			</class> <!-- com.qa.testDefinition.TestUsercreation -->
+		</classes>
+	</test> <!-- Appium(failed) -->
+</suite> <!-- Failed suite [Suite (1)] -->

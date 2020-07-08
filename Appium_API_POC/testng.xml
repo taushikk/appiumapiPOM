@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Appium">
+		<parameter name="deviceId" value="RZ8M41YBJWA"></parameter>
+		<parameter name="deviceName" value="SM-A505F"></parameter>
+		<parameter name="portNumber" value="4723"></parameter>
+		<classes>
+			<class name="com.qa.test.API.GetUsers" />
+			<class name="com.qa.test.API.createUsers" />
+			<class name="com.qa.test.API.GetUser" />
+			<class name="com.qa.testDefinition.TestUsercreation">
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<!-- <test thread-count="5" name="devicetwo"> <parameter name="deviceId" 
+		value="E2MBC80726005818"></parameter> <parameter name="deviceName" value="Nokia 
+		2.1"></parameter> <parameter name="portNumber" value="4723"></parameter> 
+		<classes> <class name="testDefinition.TestUsercreation"> <methods> <include 
+		name="TestCase_one_verifyUserIsAbleTocreateUserProfile" /> <include name="TestCase_two_viewUserProfileAndVerifyDetails" 
+		/> </methods> </class> </classes> </test> --> <!-- Test -->
+</suite> <!-- Suite -->
